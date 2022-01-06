@@ -1,35 +1,14 @@
-<!-- my-3  :: 3 ki margin container me -->
-<!-- revise bootstrap grids and complete that video  -->
-<!-- IMP NOTE logic pe focus kro html designing pe nahi -->
-<!-- production level ka naming habits rakho -->
-<!-- NOTE to choose one among checbox, keep name of all same -->
-
-<!-- 
-    Steps :
-    Put basic layout navbar ..
-    IMP then search tables, ie in layout {know what to insert, where to find.. just remember directory structure and name of componenets of bootstrap}
-    
-    html desining 
-    navbar 
-    div#table > heading+bootstrapTable
-    keep only main row in html, populate it via js using template literal of below objects (take them as template)
-    
-
-    PRO TIP watch all videos, grab main concepts and after watching whole, do it from scratch keeping main points in mind 
- -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
     <title>Library</title>
 </head>
@@ -55,49 +34,48 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" id="searchId" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <input class="form-control mr-sm-2" type="search" id="searchId" placeholder="Search" />
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    Search
+                </button>
             </form>
         </div>
     </nav>
 
-    <div class="container my-3" style="width:70%;">
-        <div id="alerts">
-
-        </div>
+    <div class="container my-3" style="width: 70%">
+        <div id="alerts"></div>
         <div id="myForm">
             <form id="myFormId">
-
                 <div class="form-group">
                     <label for="bookName">Book Name</label>
                     <input type="text" class="form-control" id="bookName" aria-describedby="emailHelp"
-                        placeholder="Enter Book Name">
-
+                        placeholder="Enter Book Name" />
                 </div>
 
                 <div class="form-group">
                     <label for="bookAuthor">Book Author</label>
-                    <input type="text" class="form-control" id="bookAuthor" placeholder="Enter Author name ">
+                    <input type="text" class="form-control" id="bookAuthor" placeholder="Enter Author name " />
                 </div>
 
                 <label for="form-check"> Genre </label>
                 <div id="form-check">
-
                     <input class="form-check-input" type="radio" name="Genre" id="Programming" value="Programming"
-                        checked>
+                        checked />
                     <label class="form-check-label" for="Programming">
                         Programming
-                    </label> <br>
+                    </label>
+                    <br />
 
-                    <input class="form-check-input" type="radio" name="Genre" id="Entertainment" value="Entertainment">
+                    <input class="form-check-input" type="radio" name="Genre" id="Entertainment"
+                        value="Entertainment" />
                     <label class="form-check-label" for="Entertainment">
                         Entertainment
-                    </label> <br>
+                    </label>
+                    <br />
 
-                    <input class="form-check-input" type="radio" name="Genre" id="Education" value="Education">
-                    <label class="form-check-label" for="Education">
-                        Education
-                    </label> <br>
+                    <input class="form-check-input" type="radio" name="Genre" id="Education" value="Education" />
+                    <label class="form-check-label" for="Education"> Education </label>
+                    <br />
 
                     <!-- FIXME <input class="form-check-input" type="radio" name="Genre" id="custom" value="customGenre">
                     <label class="form-check-label" for="customeGenre">
@@ -105,10 +83,11 @@
                          if choose this open a dropdown or input tag 
                          <input type="text" placeholder="myGenre"> 
                     </label> -->
-
                 </div>
 
-                <button type="submit" class="btn btn-primary" id="addBookBtn">Add Book</button>
+                <button type="submit" class="btn btn-primary" id="addBookBtn">
+                    Add Book
+                </button>
             </form>
         </div>
         <div id="displayTable" class="my-3">
@@ -120,14 +99,9 @@
                         <th scope="col">Last</th>
                         <th scope="col">Handle</th>
                         <th scope="col">Delete Book</th>
-
-
                     </tr>
                 </thead>
-                <tbody id="tableBody">
-
-
-                </tbody>
+                <tbody id="tableBody"></tbody>
             </table>
         </div>
     </div>
@@ -147,3 +121,21 @@
 </body>
 
 </html>
+<!-- my-3  :: 3 ki margin container me -->
+<!-- revise bootstrap grids and complete that video  -->
+<!-- production level ka naming habits rakho -->
+<!-- NOTE to choose one among checbox, keep name of all same -->
+
+<!-- 
+    Steps :
+    Put basic layout navbar ..
+    IMP then search tables, ie in layout {know what to insert, where to find.. just remember directory structure and name of componenets of bootstrap}
+    
+    html desining 
+    navbar 
+    div#table > heading+bootstrapTable
+    keep only main row in html, populate it via js using template literal of below objects (take them as template)
+    
+
+    
+ -->
